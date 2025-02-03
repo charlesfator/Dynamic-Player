@@ -13,7 +13,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.white.edgesIgnoringSafeArea(.all)
+                Image("backgroundImage") // Make sure the image is in your Assets
+                        .resizable()
+                        .scaledToFill() // Covers the entire screen
+                        .ignoresSafeArea()
                 VStack(spacing: 20) {
                     Text("Welcome to the")
                         .font(.largeTitle)
