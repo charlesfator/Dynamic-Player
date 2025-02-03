@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		9C8596304771ED186A719D4F /* Pods_Dynamic_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72794EA049E16A562993561B /* Pods_Dynamic_Player.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		566BC31F2D4D8F43001C8EDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,30 +27,21 @@
 		566BC30E2D4D8F42001C8EDF /* Dynamic Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566BC31E2D4D8F43001C8EDF /* Dynamic PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dynamic PlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566BC3282D4D8F43001C8EDF /* Dynamic PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dynamic PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72794EA049E16A562993561B /* Pods_Dynamic_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dynamic_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFAF78CB31AF84DBF2BBE028 /* Pods-Dynamic Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dynamic Player.debug.xcconfig"; path = "Target Support Files/Pods-Dynamic Player/Pods-Dynamic Player.debug.xcconfig"; sourceTree = "<group>"; };
-		FF82EB1A445537173D50ADA7 /* Pods-Dynamic Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dynamic Player.release.xcconfig"; path = "Target Support Files/Pods-Dynamic Player/Pods-Dynamic Player.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		566BC3102D4D8F42001C8EDF /* Dynamic Player */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Dynamic Player";
 			sourceTree = "<group>";
 		};
 		566BC3212D4D8F43001C8EDF /* Dynamic PlayerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Dynamic PlayerTests";
 			sourceTree = "<group>";
 		};
 		566BC32B2D4D8F43001C8EDF /* Dynamic PlayerUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Dynamic PlayerUITests";
 			sourceTree = "<group>";
 		};
@@ -65,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C8596304771ED186A719D4F /* Pods_Dynamic_Player.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +79,6 @@
 				566BC3212D4D8F43001C8EDF /* Dynamic PlayerTests */,
 				566BC32B2D4D8F43001C8EDF /* Dynamic PlayerUITests */,
 				566BC30F2D4D8F42001C8EDF /* Products */,
-				F75C4A5C9473B3A0FCACF077 /* Pods */,
-				971B29F26965845BF8A2CB98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,23 +92,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		971B29F26965845BF8A2CB98 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				72794EA049E16A562993561B /* Pods_Dynamic_Player.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F75C4A5C9473B3A0FCACF077 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BFAF78CB31AF84DBF2BBE028 /* Pods-Dynamic Player.debug.xcconfig */,
-				FF82EB1A445537173D50ADA7 /* Pods-Dynamic Player.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,11 +99,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 566BC3322D4D8F43001C8EDF /* Build configuration list for PBXNativeTarget "Dynamic Player" */;
 			buildPhases = (
-				95D109B691D59ECAE56586C3 /* [CP] Check Pods Manifest.lock */,
 				566BC30A2D4D8F42001C8EDF /* Sources */,
 				566BC30B2D4D8F42001C8EDF /* Frameworks */,
 				566BC30C2D4D8F42001C8EDF /* Resources */,
-				53661F166FE933A79737C547 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,48 +224,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		53661F166FE933A79737C547 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dynamic Player/Pods-Dynamic Player-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dynamic Player/Pods-Dynamic Player-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dynamic Player/Pods-Dynamic Player-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95D109B691D59ECAE56586C3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Dynamic Player-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		566BC30A2D4D8F42001C8EDF /* Sources */ = {
@@ -461,10 +384,9 @@
 		};
 		566BC3332D4D8F43001C8EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFAF78CB31AF84DBF2BBE028 /* Pods-Dynamic Player.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dynamic Player/Preview Content\"";
@@ -491,10 +413,9 @@
 		};
 		566BC3342D4D8F43001C8EDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF82EB1A445537173D50ADA7 /* Pods-Dynamic Player.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dynamic Player/Preview Content\"";
@@ -525,7 +446,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YCV2Q36KV8;
+				DEVELOPMENT_TEAM = NA298CA4W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -544,7 +465,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YCV2Q36KV8;
+				DEVELOPMENT_TEAM = NA298CA4W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
