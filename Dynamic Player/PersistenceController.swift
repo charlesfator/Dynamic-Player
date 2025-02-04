@@ -13,7 +13,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "YourModelName") // Replace with your Core Data model name
+        container = NSPersistentContainer(name: "PersistenceController") // Replace with your Core Data model name
 
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")

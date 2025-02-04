@@ -25,22 +25,27 @@ struct ContentView: View {
                     Text("Miku Miku Player!")
                         .font(.largeTitle)
                         .foregroundColor(.black)
+                    NavigationLink(destination: LibraryView()) {
+                        Text("View Library")
+                            .font(.headline)
+                            .foregroundColor(.black)
+                    }
                     
-//                    struct LibraryView: View {
-//                        var body: some View {
-//                            ZStack {
-//                                Color.white.edgesIgnoringSafeArea(.all)
-//                                VStack {
-//                                    Text("Welcome to the Library")
-//                                        .font(.largeTitle)
-//                                        .bold()
-//                                    
-//                                    Spacer()
-//                                }
-//                                .padding()
-//                            }
-//                        }
-//                    }
+                    struct LibraryView: View {
+                        var body: some View {
+                            ZStack {
+                                Color.white.edgesIgnoringSafeArea(.all)
+                                VStack {
+                                    Text("Welcome to the Library")
+                                        .font(.largeTitle)
+                                        .bold()
+                                    
+                                    Spacer()
+                                }
+                                .padding()
+                            }
+                        }
+                    }
                 }
             }
         }
