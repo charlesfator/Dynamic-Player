@@ -27,6 +27,7 @@
 		566BC30E2D4D8F42001C8EDF /* Dynamic Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566BC31E2D4D8F43001C8EDF /* Dynamic PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dynamic PlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566BC3282D4D8F43001C8EDF /* Dynamic PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dynamic PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8618DCD02D51AADB0039B4B0 /* Player Alt Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Player Alt Test.swift"; path = "../Player Alt Test.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +76,7 @@
 		566BC3052D4D8F42001C8EDF = {
 			isa = PBXGroup;
 			children = (
+				8618DCD02D51AADB0039B4B0 /* Player Alt Test.swift */,
 				566BC3102D4D8F42001C8EDF /* Dynamic Player */,
 				566BC3212D4D8F43001C8EDF /* Dynamic PlayerTests */,
 				566BC32B2D4D8F43001C8EDF /* Dynamic PlayerUITests */,

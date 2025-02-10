@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+
 struct Dynamic_PlayerApp: App {
     var body: some Scene {
         WindowGroup {
