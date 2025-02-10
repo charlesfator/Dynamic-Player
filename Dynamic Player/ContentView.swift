@@ -23,10 +23,14 @@ struct ContentView: View {
     @State private var currentSongIndex = 0
     @State private var timer: Timer?
     @State private var showingPicker = false
+    
+    let percentageWidth: CGFloat = UIScreen.main.nativeBounds.width * 0.28
+    let percentageHeight: CGFloat = UIScreen.main.nativeBounds.width * 0.28
+    
     var body: some View {
         VStack {
             SpriteView(scene: MikuAnimationScene(), options: [.allowsTransparency])
-                .frame(width: 400, height: 400)
+                .frame(width: percentageWidth, height: percentageHeight)
             
             Text("\(songTitle) - \(artistName)")
                 .font(.headline)
