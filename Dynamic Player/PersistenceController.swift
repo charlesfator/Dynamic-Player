@@ -12,21 +12,12 @@ struct PersistenceController {
 
     let container: NSPersistentContainer
 
-    init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "PersistenceController") // Replace with your Core Data model name
-
-        if inMemory {
-            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
-        }
-
+    init() {
+        container = NSPersistentContainer(name: "MikuMikuPlayerModel")
         container.loadPersistentStores { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         }
-    }
-
-    var viewContext: NSManagedObjectContext {
-        return container.viewContext
     }
 }

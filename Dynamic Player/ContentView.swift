@@ -2,13 +2,14 @@
 //  ContentView.swift
 //  Dynamic Player
 //
-//  Created by Leonardo Azevedo on 1/31/25.
+//  Created by Leonardo Azevedo and Chalie Fator on 1/31/25.
 //
 
 import SwiftUI
 import AVFoundation
 import SpriteKit
 import UniformTypeIdentifiers
+import CoreData
 
 struct ContentView: View {
     @State private var audioPlayer: AVAudioPlayer?
@@ -25,8 +26,17 @@ struct ContentView: View {
     @State private var showingPicker = false
     var body: some View {
         VStack {
-            SpriteView(scene: MikuAnimationScene(), options: [.allowsTransparency])
-                .frame(width: 400, height: 400)
+            
+        }
+        VStack {
+            GeometryReader { geometry in
+                let size = min(geometry.size.width, geometry.size.height) * 0.95 // Adjust scaling factor as needed
+                
+                SpriteView(scene: MikuAnimationScene(), options: [.allowsTransparency])
+                    .frame(width: size, height: size)
+                    .cornerRadius(size * 0.1) // Scales corner radius proportionally
+                    .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+            }
             
             Text("\(songTitle) - \(artistName)")
                 .font(.headline)
