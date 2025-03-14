@@ -37,13 +37,18 @@ struct SplashScreen: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-
+            Text("Welcome")
+                .font(.system(size: 72, weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .shadow(radius: 4, x: 2, y: 2)
+                .padding()
             VStack {
                 Spacer()
-                Text("Swipe up to start")
-                    .font(.title)
+                Text("Swipe")
+                    .font(.system(size: 48, weight: .bold, design: .default))
                     .foregroundColor(.white)
-                    .padding(.bottom, 30)
+                    .shadow(radius: 4, x: 2, y: 2)
+                    .padding(.bottom, 50)
             }
         }
         .gesture(
